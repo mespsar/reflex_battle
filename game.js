@@ -64,7 +64,7 @@ function checkAnswer(userChosenColour)
           started=false;
 
           setTimeout(function(){
-            $("body").removeClass("game-over2");
+            $("body").removeClass("game-over1");
   ;},1000);
 }}}
     else if(flag==0){$("h1").text(userChosenColour+" pressed too soon, Press Restart");

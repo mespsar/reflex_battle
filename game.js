@@ -6,7 +6,7 @@ var started = false;
 var flag =0;
 
 
-$(document).click(function() {
+$("#start").click(function() {
   if (!started) {flag =0
     $("h1").text("Get ready!");
 
@@ -20,7 +20,7 @@ $(document).click(function() {
   }
 });
 
-$(".btn").click(function() {
+$(".btnn").click(function() {
 
 
   var userChosenColour = $(this).attr("id");
@@ -41,7 +41,7 @@ function checkAnswer(userChosenColour)
    {
        playSound("green");
         $("body").addClass("game-over2");
-        $("h1").text("Green won, Press Any Key to Restart");
+        $("h1").text("Green won, Press Restart");
         started=false;
 
 
@@ -60,14 +60,14 @@ function checkAnswer(userChosenColour)
       else if(userChosenColour=="blue") { {
          playSound("red");
           $("body").addClass("game-over1");
-          $("h1").text("blue won, Press Any Key to Restart");
+          $("h1").text("blue won, Press  Restart");
           started=false;
 
           setTimeout(function(){
             $("body").removeClass("game-over2");
   ;},1000);
 }}}
-    else if(flag==0){$("h1").text(userChosenColour+" pressed too soon, Press Any Key to Restart");
+    else if(flag==0){$("h1").text(userChosenColour+" pressed too soon, Press Restart");
     started=false;
     flag=0;
 

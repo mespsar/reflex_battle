@@ -16,8 +16,16 @@ body {
   margin: auto;
 
 }
+#start{margin: 25px;
+display: inline-block;
+height: 100px;
+width: 200px;
+border: 10px solid black;
+border-radius: 100%;
 
-.btn {
+}
+
+.btnn {
   margin: 25px;
   display: inline-block;
   height: 200px;

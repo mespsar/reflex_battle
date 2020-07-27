@@ -6,7 +6,7 @@ var started = false;
 var flag =0;
 
 
-$(document).keypress(function() {
+$(document).click(function() {
   if (!started) {flag =0
     $("h1").text("Get ready!");
 
